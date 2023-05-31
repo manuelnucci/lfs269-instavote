@@ -11,7 +11,8 @@ spec:
     app: vote
     tier: front
   ports:
-    - port: 80
+    - name: http
+      port: 80
       targetPort: 80
       nodePort: 30001
       protocol: TCP
