@@ -19,10 +19,10 @@ spec:
           image: schoolofdevops/worker:v1
           ports:
             - containerPort: 80
-          resources:
-            requests:
-              cpu: 50m
-              memory: 100Mi
-            limits:
-              cpu: 100m
-              memory: 300Mi
+          # resources:
+          #   requests:
+          #     cpu: 50m
+          #     memory: 100Mi
+          #   limits:
+          #     cpu: 100m
+          #     memory: 300Mi
