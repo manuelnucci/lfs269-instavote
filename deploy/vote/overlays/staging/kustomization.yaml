@@ -13,6 +13,10 @@ replicas:
 images:
   - name: schoolofdevops/vote
     newTag: v3
+configMapGenerator:
+  - name: vote-options
+    envs:
+      - options.env
 patches:
   - target:
       kind: Service
