@@ -12,6 +12,7 @@ replicas:
     count: 5
 images:
   - name: schoolofdevops/vote
+    newName: manuelnucci/lfs269-vote
     newTag: v3 # {"$imagepolicy": "instavote-staging:vote:tag" }
 configMapGenerator:
   - name: vote-options
