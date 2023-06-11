@@ -12,7 +12,7 @@ replicas:
     count: 5
 images:
   - name: schoolofdevops/vote
-    newTag: v3
+    newTag: v3 # {"$imagepolicy": "instavote-staging:vote:tag" }
 configMapGenerator:
   - name: vote-options
     envs:
