@@ -5,10 +5,10 @@
 replicaCount: 1
 
 image:
-  repository: schoolofdevops/vote-result
+  repository: manuelnucci/lfs269-result
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: latest
+  tag: latest # {"$imagepolicy": "instavote-staging:result:tag" }
 
 imagePullSecrets: []
 nameOverride: ""
